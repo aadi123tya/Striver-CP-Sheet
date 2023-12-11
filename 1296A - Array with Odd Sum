@@ -1,0 +1,30 @@
+#include<iostream>
+ 
+using namespace std;
+// NOTES => Atleast one odd and even number is present in the array.
+int main()
+{
+                                                  
+ int t;
+ cin>>t;
+ for(int i=0;i<t;i++)
+ {
+      int n;
+      cin>>n;
+      int sum =0;
+      int oddFlag =0;
+      int evenFlag =0;
+      for(int j=0;j<n;j++)
+      {
+           int x;
+           cin>>x;
+           if(x%2==0)evenFlag=1;
+           else oddFlag=1;
+           sum+=x;
+      }
+      if(sum%2!=0 || (oddFlag!=0 && evenFlag!=0))cout<<"YES"<<endl;
+      else cout<<"NO"<<endl;
+     
+ }
+                                                  
+}
