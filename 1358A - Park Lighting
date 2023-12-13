@@ -1,0 +1,17 @@
+int main()
+{
+    int t;
+    cin >> t;
+    while (t-- > 0)
+    {
+        int n, m;
+        cin >> n >> m;
+        int countOfSqaure = n * m;
+        if (countOfSqaure % 2 == 0)
+            cout << countOfSqaure / 2;
+        else
+            cout << (countOfSqaure / 2) + 1;
+
+        cout << endl;
+    }
+}
